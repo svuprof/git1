@@ -1,3 +1,5 @@
+import time
+
 class Person:
   def __init__(self, aa, bb, cc):
     self.name = aa
@@ -25,3 +27,22 @@ class car:
     def mymake(self):
         print("Make is", self.make)
 
+class Videogame:
+    def __init__(self, studio, name, ip, year, genre, size, version):
+        self.studio = studio,
+        self.name = name,
+        self.year = year,
+        self.genre = genre,
+        self.size = size,
+        self.ip = ip,
+        self.version = version
+    def info(self):
+        print(f'{self.name}\n Studio: {self.studio}\nIP: {self.ip}\nGame info:\nYear: {self.year}\nGenre: {self.genre}\nSize: {self.size}')
+    def run_game(self):
+        print(f'Loading game...')
+        time.sleep(1)
+        print(f'{self.name} Version {self.version}')
+        time.sleep(0.1)
+        print(f'Now loading...')
+        time.sleep(1)
+        print(f'{self.name}\nPress any key to start!')
