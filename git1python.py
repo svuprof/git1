@@ -25,3 +25,13 @@ class car:
     def mymake(self):
         print("Make is", self.make)
 
+class dog:
+    def __init__(self, name, breed, age, color, weight):
+        self.name = name
+        self.breed = breed
+        self.age = age
+        self.color = color
+        self.weight = weight
+
+    def bark(self):
+        print(f"{self.name} says: Woof!")
