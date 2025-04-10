@@ -29,6 +29,7 @@ class car:
     def mymake(self):
         print(f"Make is {self.make}")
 
+<<<<<<< HEAD
 class Engine:
     def __init__(self, cyl, turbo, size, ty, hp):
         self.cylinder = cyl
@@ -50,6 +51,37 @@ class Engine:
             print("You have the coolest engine.")
         else:
             print("Eh it's okay!")
+=======
+
+    def myspeed(self):
+        print(f"The max speed of the {self.model} is {self.speed}")
+
+
+
+class Script:
+    def __init__(self, sn, og, ln, ty):
+        self.scriptname = sn
+        self.origin = og
+        self.language = ln
+        self.type = ty
+        self.details = ""
+
+    def myscriptname(self):
+        print("My favorite script is " + self.scriptname + ".")
+
+    def myorigin(self):
+        print("It's from " + self.origin +".")
+
+    def mylanguage(self):
+        print("It is used for the " + self.language + " language.")
+
+    def mytype(self):
+        print("It is a " + self.type + " script.")
+
+
+    def myspeed(self):
+        print(f"The max speed of the {self.model} is {self.speed}")
+>>>>>>> 5a25d9eab2d1e7ecf32757636c737c21221cf865
 
 
 class lovelypet:
@@ -62,3 +94,26 @@ class lovelypet:
         print("Pet species is:", self.species)
 
 
+<<<<<<< HEAD
+=======
+class Videogame:
+    def __init__(self, studio, name, ip, year, genre, size, version):
+        self.studio = studio,
+        self.name = name,
+        self.year = year,
+        self.genre = genre,
+        self.size = size,
+        self.ip = ip,
+        self.version = version
+    def info(self):
+        print(f'{self.name}\n Studio: {self.studio}\nIP: {self.ip}\nGame info:\nYear: {self.year}\nGenre: {self.genre}\nSize: {self.size}')
+    def run_game(self):
+        print(f'Loading game...')
+        time.sleep(1)
+        print(f'{self.name} Version {self.version}')
+        time.sleep(0.1)
+        print(f'Now loading...')
+        time.sleep(1)
+        print(f'{self.name}\nPress any key to start!')
+
+>>>>>>> 5a25d9eab2d1e7ecf32757636c737c21221cf865
