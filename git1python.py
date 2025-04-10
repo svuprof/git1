@@ -55,10 +55,6 @@ class Script:
         print("It is a " + self.type + " script.")
 
 
-    def myspeed(self):
-        print(f"The max speed of the {self.model} is {self.speed}")
-
-
 class lovelypet:
     def __init__(self,a1,a2):
         self.species = a1
