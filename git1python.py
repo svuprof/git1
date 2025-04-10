@@ -1,3 +1,5 @@
+import time
+
 class Person:
     def __init__(self, aa, bb, cc):
         self.name = aa
@@ -19,13 +21,13 @@ class Person:
 
 
 class car:
-    def __init__(self, aa, bb):
+    def __init__(self, aa, bb, cc):
         self.make = aa
         self.model = bb
+        self.maxspeed = cc
 
     def mymake(self):
-        print("Make is", self.make)
-
+        print(f"Make is {self.make}")
 
 class Engine:
     def __init__(self, cyl, turbo, size, ty, hp):
@@ -50,7 +52,4 @@ class Engine:
             print("Eh it's okay!")
 
 
-subaru = Engine(4, None, 2.4, 'boxer', 247)
 
-subaru.speed()
-subaru.engine_type()
