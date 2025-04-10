@@ -20,12 +20,18 @@ class Person:
       print(self.name +":"+ str(self.age))
 
 class car:
-    def __init__(self, aa, bb):
+    def __init__(self, aa, bb, cc):
         self.make = aa
         self.model = bb
+        self.maxspeed = cc
 
     def mymake(self):
-        print("Make is", self.make)
+        print(f"Make is {self.make}")
+
+    def myspeed(self):
+        print(f"The max speed of the {self.model} is {self.speed}")
+
+
 
 class Videogame:
     def __init__(self, studio, name, ip, year, genre, size, version):
