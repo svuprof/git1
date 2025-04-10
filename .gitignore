@@ -1,0 +1,6 @@
+# Default ignoed files
+/shelf/
+/workspace.xml
+/.idea
+/.git
+*/*
