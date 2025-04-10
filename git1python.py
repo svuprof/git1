@@ -25,3 +25,11 @@ class car:
     def mymake(self):
         print("Make is", self.make)
 
+class lovelypet:
+    def __init__(self,a1,a2):
+        self.species = a1
+        self.color = a2
+
+    def lovelypet(self):
+        print("Pet color is:", self.color)
+        print("Pet species is:", self.species)
