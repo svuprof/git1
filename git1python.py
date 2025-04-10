@@ -1,3 +1,5 @@
+import time
+
 class Person:
   def __init__(self, aa, bb, cc):
     self.name = aa
@@ -65,6 +67,7 @@ class Script:
 
 
     def myspeed(self):
+        print(f"The max speed of the {self.model} is {self.maxspeed}")
         print(f"The max speed of the {self.model} is {self.speed}")
 
 
@@ -98,6 +101,7 @@ class Videogame:
         time.sleep(1)
         print(f'{self.name}\nPress any key to start!')
 
+
 class jesko:
     def __init__(self, tp, hp, cc, trans, tm=False):
         self.topspeed = tp
@@ -111,3 +115,4 @@ class jesko:
 
     def horsepower(self):
         print(f"Horsepower: {self.horsepower} hp")
+
