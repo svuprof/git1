@@ -28,11 +28,8 @@ class car:
     def mymake(self):
         print(f"Make is {self.make}")
 
-
     def myspeed(self):
         print(f"The max speed of the {self.model} is {self.maxspeed}")
-
-
 
 class Script:
     def __init__(self, sn, og, ln, ty):
@@ -54,7 +51,6 @@ class Script:
     def mytype(self):
         print("It is a " + self.type + " script.")
 
-
 class lovelypet:
     def __init__(self,a1,a2):
         self.species = a1
@@ -63,7 +59,6 @@ class lovelypet:
     def lovelypet(self):
         print("Pet color is:", self.color)
         print("Pet species is:", self.species)
-
 
 class Videogame:
     def __init__(self, studio, name, ip, year, genre, size, version):
