@@ -25,3 +25,22 @@ class car:
     def mymake(self):
         print("Make is", self.make)
 
+class Script:
+    def __init__(self, sn, og, ln, ty):
+        self.scriptname = sn
+        self.origin = og
+        self.language = ln
+        self.type = ty
+        self.details = ""
+
+    def myscriptname(self):
+        print("My favorite script is " + self.scriptname + ".")
+
+    def myorigin(self):
+        print("It's from " + self.origin +".")
+
+    def mylanguage(self):
+        print("It is used for the " + self.language + " language.")
+
+    def mytype(self):
+        print("It is a " + self.type + " script.")
