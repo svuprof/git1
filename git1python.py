@@ -18,12 +18,17 @@ class Person:
       print(self.name +":"+ str(self.age))
 
 class car:
-    def __init__(self, aa, bb):
+    def __init__(self, aa, bb, cc):
         self.make = aa
         self.model = bb
+        self.maxspeed = cc
 
     def mymake(self):
-        print("Make is", self.make)
+        print(f"Make is {self.make}")
+
+
+    def myspeed(self):
+        print(f"The max speed of the {self.model} is {self.speed}")
 
 class dog:
     def __init__(self, name, breed, age, color, weight):
@@ -35,3 +40,74 @@ class dog:
 
     def bark(self):
         print(f"{self.name} says: Woof!")
+
+
+
+class Script:
+    def __init__(self, sn, og, ln, ty):
+        self.scriptname = sn
+        self.origin = og
+        self.language = ln
+        self.type = ty
+        self.details = ""
+
+    def myscriptname(self):
+        print("My favorite script is " + self.scriptname + ".")
+
+    def myorigin(self):
+        print("It's from " + self.origin +".")
+
+    def mylanguage(self):
+        print("It is used for the " + self.language + " language.")
+
+    def mytype(self):
+        print("It is a " + self.type + " script.")
+
+
+    def myspeed(self):
+        print(f"The max speed of the {self.model} is {self.speed}")
+
+
+class lovelypet:
+    def __init__(self,a1,a2):
+        self.species = a1
+        self.color = a2
+
+    def lovelypet(self):
+        print("Pet color is:", self.color)
+        print("Pet species is:", self.species)
+
+
+class Videogame:
+    def __init__(self, studio, name, ip, year, genre, size, version):
+        self.studio = studio,
+        self.name = name,
+        self.year = year,
+        self.genre = genre,
+        self.size = size,
+        self.ip = ip,
+        self.version = version
+    def info(self):
+        print(f'{self.name}\n Studio: {self.studio}\nIP: {self.ip}\nGame info:\nYear: {self.year}\nGenre: {self.genre}\nSize: {self.size}')
+    def run_game(self):
+        print(f'Loading game...')
+        time.sleep(1)
+        print(f'{self.name} Version {self.version}')
+        time.sleep(0.1)
+        print(f'Now loading...')
+        time.sleep(1)
+        print(f'{self.name}\nPress any key to start!')
+
+class jesko:
+    def __init__(self, tp, hp, cc, trans, tm=False):
+        self.topspeed = tp
+        self.horsepower = hp
+        self.color = cc
+        self.transmission = trans
+        self.trackmode = tm
+
+    def topspeed(self):
+        print(f"Top Speed: {self.topspeed} mph")
+
+    def horsepower(self):
+        print(f"Horsepower: {self.horsepower} hp")
