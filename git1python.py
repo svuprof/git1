@@ -43,6 +43,13 @@ class Engine:
         else:
             print("Pretty fast man!")
 
+    def mytype(self):
+        print("It is a " + self.type + " script.")
+
+
+    def myspeed(self):
+        print(f"The max speed of the {self.model} is {self.maxspeed}")
+        print(f"The max speed of the {self.model} is {self.speed}")
     def engine_type(self):
         if self.type == "boxer":
             print('You are probably a subaru...')
@@ -81,4 +88,20 @@ class Videogame:
         print(f'Now loading...')
         time.sleep(1)
         print(f'{self.name}\nPress any key to start!')
+
+
+class jesko:
+    def __init__(self, tp, hp, cc, trans, tm=False):
+        self.topspeed = tp
+        self.horsepower = hp
+        self.color = cc
+        self.transmission = trans
+        self.trackmode = tm
+
+    def topspeed(self):
+        print(f"Top Speed: {self.topspeed} mph")
+
+    def horsepower(self):
+        print(f"Horsepower: {self.horsepower} hp")    
+
 
