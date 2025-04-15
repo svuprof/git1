@@ -29,6 +29,8 @@ class car:
         print(f"Make is {self.make}")
 
     def myspeed(self):
+
+        print(f"The max speed of the {self.model} is {self.speed}")
         print(f"The max speed of the {self.model} is {self.maxspeed}")
 
 class Script:
