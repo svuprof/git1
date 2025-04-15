@@ -4,11 +4,10 @@ def first_deal(deck):
     playerhand = deck[0:3:2]
     dealerhand = deck[1:4:2]
     deck = deck[4:]
-
     playertot1, playerbonus1, playerspecial1 = total(playerhand)
     dealertot1, dealerbonus1, dealerspecial1 = total(dealerhand)
 
-    print("Let's play! I will deal the first hands\n")
+    print("Let's play! I will deal the first hand\n")
     print(f"Player: {showhand(playerhand)} ({playertot1}) {playerspecial1}")
     print(f"Dealer: {showhand(dealerhand)} ({dealertot1}) {dealerspecial1}\n")
     return deck, playerhand, dealerhand
