@@ -1,4 +1,4 @@
-class jesko:
+class audis4:
     def __init__(self, tp, hp, cc, trans, tm=False):
         self.topspeed = tp
         self.horsepower = hp
