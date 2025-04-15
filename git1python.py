@@ -29,8 +29,29 @@ class car:
         print(f"Make is {self.make}")
 
     def myspeed(self):
-        print(f"The max speed of the {self.model} is {self.speed}")
 
+        print(f"The max speed of the {self.model} is {self.speed}")
+        print(f"The max speed of the {self.model} is {self.maxspeed}")
+
+class Script:
+    def __init__(self, sn, og, ln, ty):
+        self.scriptname = sn
+        self.origin = og
+        self.language = ln
+        self.type = ty
+        self.details = ""
+
+    def myscriptname(self):
+        print("My favorite script is " + self.scriptname + ".")
+
+    def myorigin(self):
+        print("It's from " + self.origin +".")
+
+    def mylanguage(self):
+        print("It is used for the " + self.language + " language.")
+
+    def mytype(self):
+        print("It is a " + self.type + " script.")
 
 class lovelypet:
     def __init__(self,a1,a2):
@@ -40,7 +61,6 @@ class lovelypet:
     def lovelypet(self):
         print("Pet color is:", self.color)
         print("Pet species is:", self.species)
-
 
 class Videogame:
     def __init__(self, studio, name, ip, year, genre, size, version):
@@ -61,3 +81,33 @@ class Videogame:
         print(f'Now loading...')
         time.sleep(1)
         print(f'{self.name}\nPress any key to start!')
+
+class jesko:
+    def __init__(self, tp, hp, cc, trans, tm=False):
+        self.topspeed = tp
+        self.horsepower = hp
+        self.color = cc
+        self.transmission = trans
+        self.trackmode = tm
+
+    def topspeed(self):
+        print(f"Top Speed: {self.topspeed} mph")
+
+    def horsepower(self):
+        print(f"Horsepower: {self.horsepower} hp")    
+
+class rugby:
+    def __init__(self, first, last, version, position, height, weight, bronco):
+        self.first = first
+        self.last = last
+        self.version = version
+        self.position = position
+        self.height = height
+        self.weight = weight
+        self.bronco = bronco
+
+    def version(self):
+        print("I play", self.version)
+
+    def size(self):
+        print("I am ", self.height, self.weight)
