@@ -1,3 +1,5 @@
+import time
+
 class Person:
   def __init__(self, aa, bb, cc):
     self.name = aa
