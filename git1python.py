@@ -129,3 +129,16 @@ class ElectricCar:
     def charge_status(self):
         print(f"Charging {self.brand} {self.model}...")
         print(f"Estimated full charge range: {self.range_miles} miles with a {self.battery_kwh}kWh battery.")
+
+class Baseball:
+    def __init__(self, position, number, height, hand, team, coach, bat):
+        self.position = position
+        self.number = number
+        self.height = height
+        self.hand = hand
+        self.team = team
+        self.coach = coach
+        self.bat = bat
+
+    def version(self):
+        print("We are the", self.team)
