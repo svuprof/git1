@@ -142,3 +142,18 @@ class Baseball:
 
     def version(self):
         print("We are the", self.team)
+
+
+class Superhero:
+    def __init__(self, name, power, weakness, favorite_color, hobby):
+        self.name = name
+        self.power = power
+        self.weakness = weakness
+        self.favorite_color = favorite_color
+        self.hobby = hobby
+
+    def intro(self):
+        print (f"I am {self.name}, my power is {self.power}. My weakness is {self.weakness}. My favorite color is {self.favorite_color}, and my favorite hobby is {self.hobby}")
+
+    def compare(self):
+        print(f"My power of {self.power} overcomes my weakness of {self.weakness}. Can you guess how?")
