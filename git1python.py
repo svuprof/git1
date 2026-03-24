@@ -1,5 +1,10 @@
 import time
 
+class testtoday:
+    def __init__(self, aa, bb):
+        self.name = aa
+        self.age = bb
+
 class Person:
   def __init__(self, aa, bb, cc):
     self.name = aa
