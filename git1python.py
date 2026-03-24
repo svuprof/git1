@@ -182,12 +182,3 @@ class SmartHomeDevice:
         print(f"{self.name} moved from {self.location} to {new_location}.")
         self.location = new_location
 
-
-# Example usage
-if __name__ == "__main__":
-    device1 = SmartHomeDevice("Living Room Speaker", "Echo", "Speaker", False, 85, "Living Room")
-
-    device1.turn_on()
-    device1.check_battery()
-    device1.move_location("Bedroom")
-    device1.turn_off()
