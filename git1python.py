@@ -182,7 +182,36 @@ class SmartHomeDevice:
         print(f"{self.name} moved from {self.location} to {new_location}.")
         self.location = new_location
 
+class SmartThermostat(SmartHomeDevice):
+    def __init__(self, name, brand, device_type, is_on, battery_level, location, current_temp, target_temp):
+        super().__init__(name, brand, device_type, is_on, battery_level, location)
+        self.current_temp = current_temp
+        self.target_temp = target_temp
 
+    def set_target_temperature(self, new_target):
+        print(f"{self.name} target temperature changed from {self.target_temp}°F to {new_target}°F.")
+        self.target_temp = new_target
+    def display_temperature(self):
+        print(f"{self.name} current temperature is {self.current_temp}°F and target temperature is {self.target_temp}°F.")
+    def adjust_temperature(self):
+        if self.current_temp < self.target_temp:
+            print(f"{self.name} is heating up to reach {self.target_temp}°F.")
+        elif self.current_temp > self.target_temp:
+            print(f"{self.name} is cooling down to reach {self.target_temp}°F.")
+        else:
+            print(f"{self.name} is already at the target temperature of {self.target_temp}°F.")
+    def turn_on(self):
+        if not self.is_on:
+            self.is_on = True
+            print(f"{self.name} is now ON. Current temperature: {self.current_temp}°F.")
+        else:
+            print(f"{self.name} is already ON.")
+    def turn_off(self):
+        if self.is_on:
+            self.is_on = False
+            print(f"{self.name} is now OFF.")
+        else:
+            print(f"{self.name} is already OFF.")
 # Example usage
 if __name__ == "__main__":
     device1 = SmartHomeDevice("Living Room Speaker", "Echo", "Speaker", False, 85, "Living Room")
@@ -191,3 +220,6 @@ if __name__ == "__main__":
     device1.check_battery()
     device1.move_location("Bedroom")
     device1.turn_off()
+
+
+
