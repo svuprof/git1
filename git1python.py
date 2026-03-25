@@ -212,6 +212,20 @@ class SmartThermostat(SmartHomeDevice):
             print(f"{self.name} is now OFF.")
         else:
             print(f"{self.name} is already OFF.")
+
+class PizzaOrder:
+    def __init__(self, size, crust, toppings, price, delivery_time):
+        self.size = size
+        self.crust = crust
+        self.toppings = toppings
+        self.price = price
+        self.delivery_time = delivery_time
+
+    def calculate_total(self):
+        return self.price + len(self.toppings) * 1.5
+
+    def print_order(self):
+        print(f"Pizza: {self.size}, {self.crust}, {self.toppings}")
 # Example usage
 if __name__ == "__main__":
     device1 = SmartHomeDevice("Living Room Speaker", "Echo", "Speaker", False, 85, "Living Room")
