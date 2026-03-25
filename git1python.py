@@ -1,5 +1,10 @@
 import time
 
+class testtoday:
+    def __init__(self, aa, bb):
+        self.name = aa
+        self.age = bb
+
 class Person:
   def __init__(self, aa, bb, cc):
     self.name = aa
@@ -141,3 +146,118 @@ class NewThing:
 
     def horsepower(self):
         print(f"Horsepower: {self.age} hp")
+class Baseball:
+    def __init__(self, position, number, height, hand, team, coach, bat):
+        self.position = position
+        self.number = number
+        self.height = height
+        self.hand = hand
+        self.team = team
+        self.coach = coach
+        self.bat = bat
+
+    def version(self):
+        print("We are the", self.team)
+
+
+class Superhero:
+    def __init__(self, name, power, weakness, favorite_color, hobby):
+        self.name = name
+        self.power = power
+        self.weakness = weakness
+        self.favorite_color = favorite_color
+        self.hobby = hobby
+
+    def intro(self):
+        print (f"I am {self.name}, my power is {self.power}. My weakness is {self.weakness}. My favorite color is {self.favorite_color}, and my favorite hobby is {self.hobby}")
+
+    def compare(self):
+        print(f"My power of {self.power} overcomes my weakness of {self.weakness}. Can you guess how?")
+
+# git1python.py
+
+class SmartHomeDevice:
+    def __init__(self, name, brand, device_type, is_on, battery_level, location):
+        self.name = name
+        self.brand = brand
+        self.device_type = device_type
+        self.is_on = is_on
+        self.battery_level = battery_level
+        self.location = location
+
+    def turn_on(self):
+        if not self.is_on:
+            self.is_on = True
+            print(f"{self.name} is now ON.")
+        else:
+            print(f"{self.name} is already ON.")
+
+    def turn_off(self):
+        if self.is_on:
+            self.is_on = False
+            print(f"{self.name} is now OFF.")
+        else:
+            print(f"{self.name} is already OFF.")
+
+    def check_battery(self):
+        print(f"{self.name} battery level is at {self.battery_level}%.")
+
+    def move_location(self, new_location):
+        print(f"{self.name} moved from {self.location} to {new_location}.")
+        self.location = new_location
+
+class SmartThermostat(SmartHomeDevice):
+    def __init__(self, name, brand, device_type, is_on, battery_level, location, current_temp, target_temp):
+        super().__init__(name, brand, device_type, is_on, battery_level, location)
+        self.current_temp = current_temp
+        self.target_temp = target_temp
+
+    def set_target_temperature(self, new_target):
+        print(f"{self.name} target temperature changed from {self.target_temp}°F to {new_target}°F.")
+        self.target_temp = new_target
+    def display_temperature(self):
+        print(f"{self.name} current temperature is {self.current_temp}°F and target temperature is {self.target_temp}°F.")
+    def adjust_temperature(self):
+        if self.current_temp < self.target_temp:
+            print(f"{self.name} is heating up to reach {self.target_temp}°F.")
+        elif self.current_temp > self.target_temp:
+            print(f"{self.name} is cooling down to reach {self.target_temp}°F.")
+        else:
+            print(f"{self.name} is already at the target temperature of {self.target_temp}°F.")
+    def turn_on(self):
+        if not self.is_on:
+            self.is_on = True
+            print(f"{self.name} is now ON. Current temperature: {self.current_temp}°F.")
+        else:
+            print(f"{self.name} is already ON.")
+    def turn_off(self):
+        if self.is_on:
+            self.is_on = False
+            print(f"{self.name} is now OFF.")
+        else:
+            print(f"{self.name} is already OFF.")
+
+class PizzaOrder:
+    def __init__(self, size, crust, toppings, price, delivery_time):
+        self.size = size
+        self.crust = crust
+        self.toppings = toppings
+        self.price = price
+        self.delivery_time = delivery_time
+
+    def calculate_total(self):
+        return self.price + len(self.toppings) * 1.5
+
+    def print_order(self):
+        print(f"Pizza: {self.size}, {self.crust}, {self.toppings}")
+# Example usage
+if __name__ == "__main__":
+    device1 = SmartHomeDevice("Living Room Speaker", "Echo", "Speaker", False, 85, "Living Room")
+
+    device1.turn_on()
+    device1.check_battery()
+    device1.move_location("Bedroom")
+    device1.turn_off()
+
+
+
