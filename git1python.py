@@ -259,5 +259,20 @@ if __name__ == "__main__":
     device1.move_location("Bedroom")
     device1.turn_off()
 
+class Movie:
+    def __init__(self, title, director, year, genre, rating):
+        self.title = title
+        self.director = director
+        self.year = year
+        self.genre = genre
+        self.rating = rating
+
+    def display_info(self):
+        print(f"{self.title} ({self.year}) - {self.genre}")
+
+    def update_rating(self, new_rating):
+        self.rating = new_rating
+        print(f"New rating: {self.rating}")
+
 
 
