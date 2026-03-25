@@ -129,3 +129,15 @@ class ElectricCar:
     def charge_status(self):
         print(f"Charging {self.brand} {self.model}...")
         print(f"Estimated full charge range: {self.range_miles} miles with a {self.battery_kwh}kWh battery.")
+
+
+class NewThing:
+  def __init__(self, aa, bb):
+    self.name = aa
+    self.age = bb
+
+    def topspeed(self):
+        print(f"Top Speed: {self.name} mph")
+
+    def horsepower(self):
+        print(f"Horsepower: {self.age} hp")
